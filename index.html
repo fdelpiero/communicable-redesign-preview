@@ -74,7 +74,8 @@ dialog{border:0;padding:0;border-radius:22px;color:var(--ink);width:min(610px,ca
 /* Full-width photographic hero, inspired by the supplied reference. */
 .photo-header{background:var(--ink);color:#fff;border-bottom:1px solid #ffffff18}
 .photo-header.scrolled{border-color:#ffffff25}
-.photo-header .header-inner{height:84px}
+.photo-header .header-inner{height:96px}
+.photo-header .brand img{width:220px}
 .photo-header .brand-mark i{border-color:var(--lime);border-right-color:transparent}
 .photo-header .brand-mark i:nth-child(2){border-color:white;border-right-color:transparent}
 .photo-header .header-actions>.pill{background:var(--lime);color:var(--ink)}
@@ -102,11 +103,13 @@ dialog{border:0;padding:0;border-radius:22px;color:var(--ink);width:min(610px,ca
 .banner-meta svg{height:17px;width:17px;flex:none;color:var(--lime)}
 .service-bar{background:var(--paper);border-bottom:1px solid var(--line)}
 .service-bar .service-strip{margin-top:0;border:0;padding-block:22px}
+@media(max-width:900px){.photo-header .header-inner{height:88px}.photo-header .brand img{width:204px}}
 @media(min-width:1500px){.banner-inner{min-height:800px;padding-top:290px}.banner-copy h1{font-size:86px}}
 @media(max-width:1150px){.banner-copy h1{font-size:67px}.banner-inner{min-height:760px;padding-top:270px}}
 @media(max-width:900px){.banner-copy h1{font-size:61px}.banner-inner{min-height:760px;padding-top:270px}.banner-intro{max-width:500px;font-size:16px}.banner-photo{object-position:42% 44%}}
 @media(max-width:700px){
- .photo-header .header-inner{height:78px}
+ .photo-header .header-inner{height:84px}
+ .photo-header .brand img,.footer-brand .brand img{width:174px}
  .photo-header .nav{background:var(--ink);color:white;border-color:#ffffff25}
  .hero-banner:before{background:linear-gradient(180deg,rgba(8,30,32,.75) 0%,rgba(8,30,32,.58) 35%,rgba(8,30,32,.88) 100%)}
  .hero-banner:after{background-size:48px 48px}
